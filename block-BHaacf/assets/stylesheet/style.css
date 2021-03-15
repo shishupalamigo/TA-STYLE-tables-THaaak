@@ -1,0 +1,525 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CUSTOM STYLES  */
+
+/* VARIABLES */
+
+:root {
+  --primary: #ed563a;
+  --darktext: #000000;
+  --lighttext: #8f8e8e;
+}
+
+/* GENERAL */
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+a:hover {
+    color: #ed563a;
+}
+.header nav a:hover {
+  color: var(--primary);
+}
+
+/* FLEX */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-bw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-20 {
+  flex: 0 1 20%;
+}
+
+.flex-25 {
+  flex: 0 1 25%;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-32 {
+  flex: 0 1 32%;
+}
+
+.flex-40 {
+  flex: 0 1 40%;
+}
+
+.flex-46 {
+  flex: 0 1 46%;
+}
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+.flex-60 {
+  flex: 0 1 60%;
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  outline: none;
+  border: 1px solid darkgray;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary);
+}
+.btn:hover {
+    background: rgba(250, 124, 40, 0.808);
+    border: 1px solid #fff;
+    color: #fff;
+}
+.header nav .btn:hover {
+    color: #fff;
+}
+
+/* POSITIONS */
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.fix {
+  position: fixed;
+}
+
+/* HEADINGS */
+
+h1 {
+  font-size: 62px;
+  font-weight: 900;
+}
+
+h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+h5 {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+h6 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.primary-clr {
+  color: var(--primary);
+}
+
+/*SUB HEADER */
+
+.sub-header h2,
+p {
+  text-align: center;
+  color: black;
+}
+.sub-header p {
+  font-size: 16px;
+}
+
+.sub-header {
+  text-align: center;
+  margin: 20px auto;
+}
+
+/* HEADER */
+
+.header {
+  padding: 15px 0;
+  background-color: rgba(173, 172, 172, 0.6);
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.header a {
+  color: #fff;
+}
+
+.brand {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* HERO SECTION */
+
+.hero {
+  position: relative;
+}
+.cover-video {
+    width: 100%;
+    object-fit: cover;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.content h6 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.content h1 {
+  color: #fff;
+}
+
+/* FEATURES SECTIONS */
+
+.feature {
+  padding: 80px;
+}
+
+.feature .sub-header p {
+  color: var(--lighttext);
+  font-size: 16px;
+}
+
+.feature img {
+  margin-right: 15px;
+}
+
+.feature div p {
+  color: var(--lighttext);
+  text-align: left;
+  font-size: 16px;
+}
+
+.feature div {
+  margin: 20px auto;
+}
+
+.feature div a {
+  color: #1681fa;
+}
+
+/* BEGIN SECTION*/
+
+.begin {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../media/cta-bg.jpg);
+}
+
+.begin h5 {
+  color: #fff;
+}
+
+.begin p {
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* CLASSES */
+
+.classes {
+  padding: 100px 0;
+}
+
+.classes .class {
+  border: 1px solid rgb(240, 235, 235);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  padding: 16px 32px;
+  margin: 40px auto;
+}
+
+.schdl {
+  width: 100%;
+}
+
+.classes .sub-header {
+  margin-bottom: 40px;
+}
+
+.classes .sub-header p {
+  color: var(--lighttext);
+}
+
+.classes div .schedule {
+  padding: 20px 85px;
+}
+
+.classes div .active {
+  color: var(--primary);
+}
+
+.classes .class img {
+  width: 50px;
+  height: 50px;
+  margin-right: 40px;
+}
+
+.classes div img {
+  width: 100%;
+}
+
+.classes div p {
+  margin: 10px 0;
+  color: var(--lighttext);
+  text-align: left;
+}
+
+.classes div a {
+  margin: 20px 0;
+}
+
+/* SCHEDULS */
+
+.schedule {
+  padding: 80px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../media/schedule-bg.jpg);
+}
+
+.schedule p,
+.schedule h2 {
+  color: #fff;
+}
+
+.schedule span:hover {
+  color: var(--primary);
+}
+
+.schedule p {
+  margin-bottom: 60px;
+}
+table {
+  margin: 40px auto;
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+td,
+th {
+  padding: 40px 40px;
+}
+
+/* TRAINERS */
+
+.trainers {
+  padding: 100px 0;
+}
+
+.trainer {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.trainer p {
+  text-align: left;
+  font-size: 16px;
+  color: var(--lighttext);
+}
+
+.trainer .pri-clr {
+  color: var(--primary);
+  text-align: left;
+  font-weight: 600;
+}
+
+.trainer img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.trainers .sub-header p {
+  color: var(--lighttext);
+  margin-bottom: 80px;
+}
+
+.trainer nav ul a {
+  color: rgb(14, 13, 13);
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+/* CONATACT SECTION*/
+
+.contact {
+  font-size: 0;
+}
+.form {
+  height: 500px;
+  padding: 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../media/contact-bg.jpg);
+}
+
+form {
+  height: 100%;
+  background-color: #fff;
+  padding: 30px;
+}
+form input, form textarea {
+    border: 1px solid lightgray;
+}
+form input:hover, form textarea:hover {
+    outline: none;
+    border: .5px solid gray;
+}
+.your {
+  width: 48%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.subject {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 120px;
+}
+
+form a {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 32px 0;
+  color: var(--lighttext);
+}
+.footer small {
+    font-size: 12px;
+}
+.footer b {
+  font-weight: 500;
+  font-size: 15px;
+}

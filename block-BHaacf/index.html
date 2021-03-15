@@ -1,0 +1,453 @@
+<!-- - Create a layout according to the design shown below.
+
+![Table Assignment level 1](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/table/ex-1.png)
+
+- Attach the video provided in the background of hero section.
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+
+- Work on typography in detail.
+
+- Do not forget to checkout the preview video, before working on the assignment. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Studio Assignment I | Organising Data with Tables </title>
+    <!-- FONT AWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/d77ac583c4.js" crossorigin="anonymous"></script>
+    <!-- FONT ICONS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;
+                400;500;600;800;900&display=swap"   
+                rel="stylesheet">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+</head>
+<body>
+    <!-- PAGE HEADER-->
+        <header class="header container">
+            <div class="container flex">
+                <a class="brand" href="#">
+                    TRAINING <span class="primary-clr">STUDIO</span>
+                </a>
+                <nav class="flex-60">
+                    <ul class="flex">
+                        <li>
+                            <a href="#"><span class="primary-clr">HOME</span></a>
+                        </li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CLASSES</a></li>
+                        <li><a href="#">SCHEDULES</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a class="btn btn-primary" href="#">SIGN UP</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <!-- MAIN -->  
+    <main>  
+
+        <!--HERO SECTION-->
+        <section class="hero flex-center">
+            <video
+                    class="cover-video"
+                    autoplay
+                    muted
+                    loop
+                    src="assets/media/gym-video.mp4">
+            </video>
+
+            <div class="content">
+                <h6>WORK HARDER, GET STRONGER</h6>
+                <h1>EASY WITH OUR <span class="primary-clr">GYM</span></h1>
+                <a class="btn btn-primary" href="#">BECOME A MEMBER</a>
+            </div>
+        </section>
+
+      <!-- FEATURES SECTIONS-->
+
+        <section class="feature">
+            <header class="sub-header">
+                <h2>CHOOSE <span class="primary-clr">PROGRAM</span></h2>
+                <img src="assets/media/line-dec.png" alt="Design Here" />
+                <p>
+                    Training Studio is free CSS template for gyms and fitness centers.
+                </p>
+                <p>
+                    You are allowed to use this template for your business website.
+                </p>
+            </header>
+
+            <article class="container flex wrap">
+                <div class="flex flex-46">
+                    <img src="assets/media/features-first-icon.png" alt="Dumble" />
+                    <div>
+                         <h6>Basic Fitness</h6>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+                            ab, asperiores quisquam id eos tempore.
+                        </p>
+                        <a href="#"><span class="primary-clr">DISCOVER MORE</span></a>
+                    </div>
+                </div>
+                <div class="flex flex-46">
+                    <img src="assets/media/features-first-icon.png" alt="Dumble" />
+                    <div>
+                        <h6>Basic Fitness</h6>
+                        <p>
+                            Lorem ipsum dolor sit,
+                            <a href="#">Digital Marketing</a> adipisicing elit. Ipsam ab,
+                            <a href="#">Corporate</a> id eos tempore.
+                        </p>
+                        <a href="#"><span class="primary-clr">DISCOVER MORE</span></a>
+                    </div>
+                </div>
+
+                <div class="flex flex-46">
+                    <img src="assets/media/features-first-icon.png" alt="Dumble" />
+                    <div>
+                        <h6>Basic Fitness</h6>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+                            ab, asperiores quisquam id eos tempore.
+                        </p>
+                        <a href="#"><span class="primary-clr">DISCOVER MORE</span></a>
+                    </div>
+                </div>
+
+                <div class="flex flex-46">
+                    <img src="assets/media/features-first-icon.png" alt="Dumble" />
+                    <div>
+                        <h6>Basic Fitness</h6>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+                            ab, asperiores quisquam id eos tempore.
+                        </p>
+                        <a href="#"><span class="primary-clr">DISCOVER MORE</span></a>
+                    </div>
+                </div>
+                <div class="flex flex-46">
+                    <img src="assets/media/features-first-icon.png" alt="Dumble" />
+                    <div>
+                        <h6>Basic Fitness</h6>
+                        <p>
+                            Lorem ipsum dolor sit, <a href="#">Pixal Website</a> adipisicing
+                            elit. Ipsam ab, asperiores quisquam id eos tempore.
+                        </p>
+                        <a href="#"><span class="primary-clr">DISCOVER MORE</span></a>
+                    </div>
+                </div>
+                <div class="flex flex-46">
+                    <img src="assets/media/features-first-icon.png" alt="Dumble" />
+                    <div>
+                        <h6>Basic Fitness</h6>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+                            ab, asperiores quisquam id eos tempore.
+                        </p>
+                        <a href="#"><span class="primary-clr">DISCOVER MORE</span></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--BEGIN SECTION-->
+
+        <section class="begin">
+            <article>
+                <h5>
+                    DON'T <span class="primary-clr">THINK</span>, BEGIN
+                    <span class="primary-clr">TODAY</span>!
+                </h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur, reiciendis? Dolor corporis quaerat asperiores nostrum
+                    ipsa amet,<br />
+                    accusantium dolorem maxime culpa tempore itaque ipsum fugiat optio
+                    id rem provident. Error.
+                </p>
+                <a class="btn btn-primary" href="#"> BECOME A MEMBER</a>
+            </article>
+        </section>
+
+      <!--CLASSES SECTION-->
+
+        <section class="classes">
+            <header class="sub-header">
+                <h2>OUR <span class="primary-clr">CLASSES</span></h2>
+                <img src="assets/media/line-dec.png" alt="Design Here" />
+                <p>
+                    Training Studio is free CSS template for gyms and fitness centers.
+                </p>
+                <p>You are allowed to use this template for your business website.</p>
+            </header>
+
+            <div class="container flex">
+                <div class="flex-25">
+                    <div class="class active flex-bw">
+                        <img src="assets/media/tabs-first-icon.png" alt="Dumble" />
+                        <h6>First Training Class</h6>
+                    </div>
+                    <div class="class flex-bw">
+                        <img src="assets/media/tabs-first-icon.png" alt="Dumble" />
+                        <h6>First Training Class</h6>
+                    </div>
+                    <div class="class flex-bw">
+                        <img src="assets/media/tabs-first-icon.png" alt="Dumble" />
+                        <h6>First Training Class</h6>
+                    </div>
+                    <div class="class flex-bw">
+                        <img src="assets/media/tabs-first-icon.png" alt="Dumble" />
+                        <h6>First Training Class</h6>
+                    </div>
+                    <a class="btn btn-primary schdl" href="#">View All Schedules</a>
+                </div>
+
+                <article class="flex-60">
+                    <img src="assets/media/training-image-01.jpg" alt="Workout" />
+                    <h5>First Training Class</h5>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+                        amet officiis ut corrupti voluptates ipsam repudiandae?
+                        Reprehenderit quia culpa nihil nemo quas error libero consequuntur
+                        incidunt tempora, debitis quod minus. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                    </p>
+                    <a class="btn btn-primary" href="#">VIEW SCHEDULE</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- SCHEDULE -->
+
+        <section class="schedule">
+            <header class="sub-header">
+                <h2>CLASSES <span class="primary-clr">SCHEDULE</span></h2>
+                <img src="assets/media/line-dec.png" alt="Design Here" />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam
+                    dicta beatae sunt quaerat,<br />
+                    accusantium deserunt reiciendis molestias nobis harum culpa eaque.
+                </p>
+            </header>
+
+            <p>
+                <span class="primary-clr">Monday</span> / <span>Tuesday</span> / <span>Wednesday</span> /
+                <span>Thursday</span> / <span>Friday</span>
+            </p>
+
+            <table>
+                <tr>
+                    <th>Fitness Class</th>
+                    <td>10:00AM - 11:30AM</td>
+                    <td></td>
+                    <td>William G. Stawart</td>
+                </tr>
+                <tr>
+                    <th>Muscles Building</th>
+                    <td></td>
+                    <td></td>
+                    <td>Paul D. Newman</td>
+                </tr>
+                <tr>
+                    <th>Body Building</th>
+                    <td></td>
+                    <td>02:00PM - 03:30PM</td>
+                    <td>Boyd C. Harris</td>
+                </tr>
+                <tr>
+                    <th>Yoga Training Classes</th>
+                    <td></td>
+                    <td></td>
+                    <td>Hector T. Daigle</td>
+                </tr>
+                <tr>
+                    <th>Advanced Training</th>
+                    <td></td>
+                    <td></td>
+                    <td>Bret D. Bowers</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- FTINESS TRAINERS-->
+
+        <section class="trainers">
+            <header class="sub-header">
+                <h2>CLASSES<span class="primary-clr">SCHEDULE</span></h2>
+                <img src="assets/media/line-dec.png" alt="Design Here" />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam
+                    dicta beatae sunt quaerat,<br />
+                    accusantium deserunt reiciendis molestias nobis harum culpa eaque.
+                </p>
+            </header>
+
+            <div class="container flex">
+                <div class="trainer flex-30">
+                    <img src="assets/media/first-trainer.jpg" alt="Trainer" />
+                    <p class="primary-clr">Strength Trainer</p>
+                    <h5>Bret D. Bowers</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt et
+                        nihil sint qui eaque cupiditate quasi, corrupti ipsum at minus.
+                    </p>
+                    <nav>
+                        <ul class="flex-left">
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fab fa-behance"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="trainer flex-30">
+                    <img src="assets/media/second-trainer.jpg" alt="Trainer" />
+                    <p class="primary-clr">Muscle Trainer</p>
+                    <h5>Hector T. Daigle</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt et
+                        nihil sint qui eaque cupiditate quasi, corrupti ipsum at minus.
+                    </p>
+                    <nav>
+                        <ul class="flex-left">
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                     <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fab fa-behance"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="trainer flex-30">
+                    <img src="assets/media/third-trainer.jpg" alt="Trainer" />
+                    <p class="primary-clr">Power Trainer</p>
+                    <h5>Poul D. Newman</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt et
+                        nihil sint qui eaque cupiditate quasi, corrupti ipsum at minus.
+                    </p>
+                    <nav>
+                        <ul class="flex-left">
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fab fa-behance"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav> 
+                </div>   
+            </div>
+        </section>
+
+      <!-- CONTACT SECTION -->
+
+      <section class="contact flex">
+            <div class="map flex-50">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18606.98370880319!2d76.34578646081609!3d32.20677257413833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1615319876069!5m2!1sen!2sin"
+                        width="100%"
+                        height="500"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy">
+                </iframe>
+            </div>
+            <div class="form flex-50">
+                <form action="index.html" method="POST">
+                    <fieldset class="flex">
+                        <input
+                                class="your"
+                                type="text"
+                                name="name"
+                                placeholder=" Your Name*"
+                                required/>
+                        <input
+                                class="your"
+                                type="email"
+                                name="email"
+                                placeholder=" Your Email*"
+                                required/>
+                    </fieldset>
+                    <input
+                            class="subject"
+                            type="text"
+                            name="subject"
+                            placeholder="Subject"/>
+                    <textarea
+                             name="message"
+                            id="message"
+                            rows="10"
+                            placeholder="Message">
+                    </textarea>
+                    <a class="btn btn-primary" href="#">SEND MESSAGE</a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer flex-center">
+      <small>
+          <b>Copyright</b> 
+            &copy; 2021 Training Studio, Made By
+            <span class="primary-clr">
+          Shishupal Kumar</span>
+      </small>
+    </footer>
+</body>
+</html>
